@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 10), () => print("Splash Done"));
+    Timer(Duration(seconds: 5), () => Navigator.pushReplacement(context,new MaterialPageRoute(builder: (context) => StartIntoApp())));
   }
 
   @override
@@ -94,17 +94,17 @@ class _SplashScreenState extends State<SplashScreen> {
                       padding: EdgeInsets.only(top: 30.0),
                     ),
 
-                    new FlatButton(
-                      child: Text("Start"),
-                      color: Colors.white,
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/Start');
-                      },
-                      shape: new RoundedRectangleBorder(
-                        borderRadius:
-                            new BorderRadiusDirectional.circular(20.0),
-                      ),
-                    ),
+//                    new FlatButton(
+//                      child: Text("Start"),
+//                      color: Colors.white,
+//                      onPressed: () {
+//                        Navigator.pushNamed(context, '/Start');
+//                      },
+//                      shape: new RoundedRectangleBorder(
+//                        borderRadius:
+//                            new BorderRadiusDirectional.circular(20.0),
+//                      ),
+//                    ),
                   ],
                 ),
               ),
